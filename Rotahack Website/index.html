@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotaract Club Of NEW LJIET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="admin-login-btn" style="display:none;">Login as Admin</button>
+  <div id="admin-login-modal" class="modal-overlay" style="display:none;">
+    <div class="modal-content admin-modal-content">
+      <h2 style="color:#fff;background:#b4002d;padding:1rem 0;border-radius:12px 12px 0 0;">Admin Login <span style='font-size:1.3rem;'>🔒</span></h2>
+      <form id="admin-login-form">
+        <input type="text" id="admin-username" placeholder="Admin Username" required autocomplete="username" style="margin-top:1.2rem;"><br>
+        <input type="password" id="admin-password" placeholder="Admin Password" required autocomplete="current-password"><br>
+        <button type="submit" style="background:linear-gradient(135deg,#b4002d,#dc3545);color:#fff;">Login as Admin</button>
+        <div id="admin-login-error" style="color:#b4002d;margin-top:0.5rem;display:none;font-size:0.98rem;"></div>
+      </form>
+    </div>
+  </div>
+  <div id="chatbot-widget">
+    <button id="chatbot-toggle" title="Ask Rotaract Assistant">💬</button>
+    <div id="chatbot-window" style="display:none;">
+      <div id="chatbot-header">Rotaract Assistant <span id="chatbot-close">&times;</span></div>
+      <div id="chatbot-messages"></div>
+      <form id="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Ask a question..." autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <header>
+    <!-- Restore the text logo instead of the image -->
+    <h1 style="text-align:center;margin:1rem 0 1rem 0;">Rotaract Club Of NEW LJIET</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" id="nav-home">Home</a></li>
+        <li><a href="#events" id="nav-events">Events</a></li>
+        <li><a href="#members" id="nav-members">Members</a></li>
+        <li><a href="#volunteering" id="nav-volunteering">Volunteering</a></li>
+        <li><a href="#donate" id="nav-donate">Donate</a></li>
+        <li><a href="#announcements" id="nav-announcements">Announcements</a></li>
+        <li style="display:none;" id="admin-panel-nav"><a href="#admin" id="nav-admin">Admin Panel</a></li>
+      </ul>
+    </nav>
+    <button id="logout-btn" style="margin-top:1rem;display:none;">Logout</button>
+  </header>
+  <main id="content">
+    <!-- Content will be loaded here -->
+  </main>
+  <footer>
+    <p>&copy; 2025 Rotaract Club Of NEW LJIET</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
